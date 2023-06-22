@@ -1,0 +1,102 @@
+.feature-container {
+    min-height: calc(100vh - 68px); 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F6F7FF;
+}
+
+.feature-container .text-wrapper {
+    padding-bottom: 96px;
+    max-width: 1200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-container .text-wrapper h1 {
+    font-size: 48px;
+    font-weight: 700;
+    /* color: #111; */
+}
+
+.feature-container .text-wrapper h2 {
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0,0,0,1);
+    max-width: 700px;
+}
+
+.feature-container .feature-wrapper {
+    /* margin: 20px 0; */
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.feature-container .feature-wrapper .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #1488d8;
+    background-color: #fff;
+    border-radius: 15px;
+    /* cursor: pointer; */
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.05);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+    text-align: center;
+}
+
+.feature-container .feature-wrapper .feature-item:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.12);
+}
+
+.feature-container .feature-wrapper .feature-item .feature-item-text {
+    padding: 20px;
+    max-width: 350px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #444;
+}
+
+.feature-container .feature-wrapper .feature-item .feature-icon svg {
+    color: #1488d8;
+    font-size: 120px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .feature-container .text-wrapper h1 {
+        font-size: 40px;
+    }
+
+    .feature-container .text-wrapper h2 {
+        max-width: 80%;
+        font-size: 24px;
+        
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .feature-container .text-wrapper{
+        padding-bottom: 48px;
+    }
+
+    .feature-container .text-wrapper h1 {
+        font-size: 36px;
+    }
+
+    .feature-container .text-wrapper h2 {
+        max-width: 80%;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}

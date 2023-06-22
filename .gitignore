@@ -1,0 +1,30 @@
+.vscode
+venv
+
+# Frontend
+01_frontend/node_modules
+
+# Models
+02_backend/00_models/00_vncorenlp
+02_backend/00_models/01_intent_classifier
+02_backend/00_models/02_named_entity_recognizer
+02_backend/00_models/03_question_retriever
+02_backend/00_models/04_context_retriever
+02_backend/00_models/05_reranker
+02_backend/00_models/06_quesion_answering
+02_backend/00_models/07_stt
+
+# Cache
+02_backend/01_api_gateway/__pycache__
+02_backend/03_convesation_manager/__pycache__
+02_backend/04_nlu/__pycache__
+02_backend/05_stt/__pycache__
+02_backend/06_retriever/__pycache__
+02_backend/07_qa/__pycache__
+
+02_backend/05_stt/text_processing/__pycache__
+02_backend/06_retriever/code/__pycache__
+
+# Recored Files
+02_backend/05_stt/voice
+

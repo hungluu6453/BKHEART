@@ -1,0 +1,187 @@
+.navbar {
+    width: 100%;
+    height: 68px;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #979797;
+    position: fixed;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    
+}
+
+.navbar .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+.navbar .nav-menu {
+    display: flex;
+}
+
+.navbar li {
+    padding: 0 1rem;
+    position: relative;
+}
+
+.navbar li a {
+    color: #1488D8;
+    font-size: 18px;
+    font-weight: 550;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.navbar li a:hover,
+.navbar li .active {
+    color: #030391;
+}
+
+
+.navbar li a:not(.active)::before {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #030391;
+    position: absolute;
+    bottom: -5px;
+    left: 18px;
+    transform: scale(0, 1);
+    transition: transform 0.5s ease;
+    transform-origin: 0 100%;
+}
+
+
+
+.navbar li a:not(.active):hover::before {
+    transform: scale(1, 1);
+}
+
+.navbar li .active::before {
+    /* transition: transform 0.5s ease; */
+    transform: scale(1, 1);
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #030391;
+    position: absolute;
+    bottom: -5px;
+    left: 18px;
+}
+
+.logo img {
+    width: 4rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.navbar .container .btn {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px 15px 10px 15px;
+    transition: 0.4s;
+}
+
+.navbar .container .overlay {
+    position: fixed;
+    inset: 0;
+    top: 68px;
+    background: rgba(0, 0, 0, 0);
+    transition: all 0.4s ease-in-out;
+    pointer-events: none;
+}
+
+.navbar .container .overlay.active {
+    display: block;
+    pointer-events: auto;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width:1024px) {
+    .navbar {
+        height: 68px;    
+    }
+    .navbar .container .btn {
+        width: 100px;
+        height: 32px;
+        font-size: 14px;
+        padding: 8px 12px 8px 12px;
+    }
+    /* .logo img {
+        width: 3rem;
+    }
+
+    .navbar li a {
+        color: #1488D8;
+        font-size: 16px;
+        font-weight: 550;
+        transition: all 0.5s ease;
+        cursor: pointer;
+    } */
+}
+
+@media screen and (max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+    .navbar .nav-menu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 68px;
+        left: -100%;
+        height: 100vh;
+        width: 298px;
+        background-color: rgba(255, 255, 255,.98);
+        transition: all 0.4s ease-in-out;
+        z-index: 10;
+    }
+
+    .navbar .active {
+        left: 0;
+    }
+
+    .navbar .container li {
+        padding: 1rem 1rem;
+    }
+
+    .navbar .nav-menu li a {
+        font-size: 1.5rem;
+    }
+
+    .navbar .container .logo {
+        /* top: 50%; */
+	    right: 50%;
+	    transform: translateX(45%);
+    }
+
+    /* .navbar .container .btn {
+        width: 120px;
+        font-size: 14px;
+        padding: 10px 15px 10px 15px;
+    } */
+
+    .navbar li a:not(.active)::before {
+       width: 0;
+    }
+        
+    .navbar li .active::before {
+        width: 0;
+    }
+}

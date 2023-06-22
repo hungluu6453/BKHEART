@@ -1,0 +1,12 @@
+.loading-animation {
+    display: flex;
+    align-items: center;
+    
+}
+
+.loading-animation .loading-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #4b9cdb;
+}

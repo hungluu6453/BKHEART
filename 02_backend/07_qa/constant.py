@@ -1,0 +1,1 @@
+MODEL_PATH = '00_models/06_quesion_answering'

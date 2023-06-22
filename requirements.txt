@@ -1,0 +1,45 @@
+# API Server
+fastapi==0.92.0
+uvicorn==0.20.0
+requests
+
+# Database
+psycopg2
+
+# Common
+tensorflow==2.11.0
+tensorflow_addons
+keras==2.11.0
+
+torch==1.13.1
+
+transformers==4.26.1
+sentencepiece==0.1.97
+
+pandas==1.5.3
+numpy==1.24.2
+scikit-learn==1.2.2
+
+py_vncorenlp
+vncorenlp
+
+# STT
+torchaudio==0.13.1
+speechbrain==0.5.14
+pyctcdecode==0.5.0
+
+python-multipart==0.0.5
+pydub==0.25.1   # must install ffmpeg
+ffprobe
+
+https://github.com/kpu/kenlm/archive/master.zip
+
+# MLOps
+dvc
+dvc_gdrive
+
+# Retriever
+gensim==4.3.0
+
+# Conversaion Manager
+pyyaml

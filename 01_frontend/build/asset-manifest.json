@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e4054353.css",
+    "main.js": "/static/js/main.a79eb7b0.js",
+    "static/media/chatBot.png": "/static/media/chatBot.a8e372a0895c0ddd0823.png",
+    "static/media/logoBK.png": "/static/media/logoBK.e89a65f56239b8d198ea.png",
+    "index.html": "/index.html",
+    "main.e4054353.css.map": "/static/css/main.e4054353.css.map",
+    "main.a79eb7b0.js.map": "/static/js/main.a79eb7b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4054353.css",
+    "static/js/main.a79eb7b0.js"
+  ]
+}
